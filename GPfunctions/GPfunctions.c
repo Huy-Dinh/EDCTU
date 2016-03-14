@@ -24,6 +24,7 @@ uint8_t sent = 0;
 void updateOLEDSDCSList()
 {
 	uint8_t counter = 0;
+	setCursor(0,0);
 	char a[10];
 	OLEDclear(0, 0, 128, 56);
 	for (counter = 0; counter < thisWarehouse.SDCSnum; counter++)
