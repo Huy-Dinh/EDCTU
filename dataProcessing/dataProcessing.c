@@ -86,7 +86,7 @@ uint8_t noDuplicatedAddress()
 		return 0;
 }
 
-/** @brief Find the numerical index of a gauge when its address is known
+/** @brief Find the numerical index of a gauge when its SDCS address is known
  *
  *  @return the numerical index of the addressed gauge
  */

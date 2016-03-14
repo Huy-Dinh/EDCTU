@@ -436,7 +436,6 @@ void mainLoop()
 	unsigned long timeKeeper = 0;
 	unsigned long resetTimeKeeper = 0;
 	unsigned long delayTime = 0;
-
 	unsigned long OLEDResetTime = 0;
 
 	if (autoSetup == 2)

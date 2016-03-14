@@ -294,7 +294,6 @@ uint8_t CANGetSDCSData(uint8_t index)
 					thisWarehouse.SDCSDataList[index].stationDataList[3].RFID[3] = pui8MsgData[3];
 					thisWarehouse.SDCSDataList[index].stationDataList[3].pressureOne = (pui8MsgData[4]<<8) | (pui8MsgData[5]);
 					thisWarehouse.SDCSDataList[index].stationDataList[3].pressureTwo = (pui8MsgData[6]<<8) | (pui8MsgData[7]);
-					//UARTprintf("\n %d length %d: %x %x %x %x %d\n", thisWarehouse.SDCSDataList[index].address, sCANMessage.ui32MsgLen, pui8MsgData[0], pui8MsgData[1], pui8MsgData[2], pui8MsgData[3], (pui8MsgData[4]<<8) | (pui8MsgData[5]));
 					CANMessageGet(CAN0_BASE, 5, &sCANMessage, false);
 					thisWarehouse.SDCSDataList[index].stationDataList[4].RFID[0] = pui8MsgData[0];
 					thisWarehouse.SDCSDataList[index].stationDataList[4].RFID[1] = pui8MsgData[1];

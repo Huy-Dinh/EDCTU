@@ -46,7 +46,7 @@
 #define SEND_TIMEOUT 		350
 
 extern struct tcp_pcb* thingspeakpcb;
-extern uint8_t ethernetStatus;
+extern volatile uint8_t ethernetStatus;
 extern uint32_t g_ui32IPAddress;
 
 extern uint8_t pui8MACArray[8];

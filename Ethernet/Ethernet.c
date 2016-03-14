@@ -13,7 +13,7 @@
 #include "Ethernet.h"
 
 struct tcp_pcb* thingspeakpcb;
-uint8_t ethernetStatus;
+volatile uint8_t ethernetStatus;
 uint32_t g_ui32IPAddress;
 
 uint32_t ui32NewIPAddress;
