@@ -455,8 +455,8 @@ void mainLoop()
 			OLEDreset();
 			updateOLEDSDCSList();
 		}
-		updateOLEDicons();
 
+		updateOLEDicons();
 		feedTheDog();
 
 		if (timeIsOut(resetTimeKeeper, RESET_INTERVAL))
@@ -464,6 +464,7 @@ void mainLoop()
 			loadDropToEEPROM(getDrops());
 			SysCtlReset();
 		}
+
 		if (timeIsOut(timeKeeper, SAMPLING_INTERVAL))
 		{
 #ifdef DEBUG_PRINT_UART
