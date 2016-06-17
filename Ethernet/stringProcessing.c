@@ -41,7 +41,7 @@ uint8_t sendDataToThingSpeak()
 	EthernetPrint("X-THINGSPEAKAPIKEY: P30OX79S1VO2887G\n");
 	EthernetPrint("Content-Type: application/x-www-form-urlencoded\n");
 	EthernetPrint("Content-Length: 1929");
-	EthernetPrint("\n\n");
+	EthernetPrint("\r\n\r\n");
 	EthernetPrint("field1=");
 	loadBody();
 	printBody();
@@ -66,9 +66,10 @@ uint8_t sendDataToThingSpeak()
 	EthernetPrint("&field8=");
 	loadEnding();
 	printEnding();
+	EthernetPrint("\r\n\r\n");
 
 	//CHUA CHAY, VL LAM ANH EM OI
-	return 1;
+	//return 1;
 
 	// YEU LAI TU DAU
 	timeOutSet(&timeDummy);
